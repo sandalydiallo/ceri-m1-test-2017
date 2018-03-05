@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>fr.univavignon</groupId>
+	<artifactId>rodeo</artifactId>
+	<name>RodeoProject</name>
+	<packaging>jar</packaging>
+	<version>1.0.0</version>
+	<url>https://github.com/ELKHATTABMAHMOUD/ceri-m1-test-2017</url>
+	<developers>
+		<developer>
+			<name>EL KHATTAB Mahmoud</name>
+			<id>kmahmoud</id>
+			<email>elkhattab.mahmoud@gmail.com></email>
+		</developer>
+	</developers>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.7</version>
+			<scope>test</scope>
+		</dependency> 
+	</dependencies>
+	<build>
+		<sourceDirectory>src\main\java</sourceDirectory>
+		<testSourceDirectory>src\test\java</testSourceDirectory>
+	</build>
+</project>
