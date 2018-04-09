@@ -18,7 +18,7 @@ jobs:
       - run: mvn dependency:go-offline
 
       # run tests!
-      - run: mvn integration-test
+      - run: mvn test
       - run: mvn cobertura:cobertura
       - run: bash <(curl -s https://codecov.io/bash) -t $CodeCove_Token
       
