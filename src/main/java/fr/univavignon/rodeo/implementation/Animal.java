@@ -2,20 +2,16 @@ package fr.univavignon.rodeo.implementation;
 
 import fr.univavignon.rodeo.api.IAnimal;
 
-public class Animal implements IAnimal {
-
-	private String name ; 
+public class Animal extends NamedObject implements IAnimal {
+	 
 	private int XP ; 
 	private boolean secret ; 
 	private boolean endangered ; 
 	private boolean boss ;
 	
 	public Animal(String name){
-		this.name = name ; 
-	}
-	public String getName() {
-		// TODO Auto-generated method stub
-		return this.name;
+		super(name) ; 
+		
 	}
 
 	public int getXP() {
