@@ -17,8 +17,6 @@ import fr.univavignon.rodeo.api.*;
 
 public class IEnvironmentTest {
 	
-	 
-	@Test
 	public static IEnvironment getIEnvironmentInstance() {
 		//I should create a mock for IAnimal 
 		return Mockito.mock(IEnvironment.class);

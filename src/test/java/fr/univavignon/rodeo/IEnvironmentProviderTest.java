@@ -46,7 +46,7 @@ public class IEnvironmentProviderTest {
 		
 		IEnvironment IEnvironment = IEnvironmentTest.getIEnvironmentInstance();
 		Mockito.when(IEnvProvider.getEnvironment("environment 1")).thenReturn(IEnvironment);
-		assertEquals(IEnvProvider.getEnvironment(""), IEnvironment);
+		assertEquals(IEnvProvider.getEnvironment("environment 1"), IEnvironment);
 		
 	}
 

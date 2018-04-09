@@ -14,15 +14,13 @@ import fr.univavignon.rodeo.api.IAnimal;
 
 public class IAnimalTest {
 	
-	@Mock
-	IAnimal animal ; 
 	
 	
 	/**
 	 * this method provides a mock instance of IAnimal and it will
 	 * be used in every method to create an IAnimal instance 
 	 */
-	@Test
+
 	public static IAnimal getIAnimalInstance() {
 		//I should create a mock for IAnimal 
 		return Mockito.mock(IAnimal.class);
@@ -33,30 +31,30 @@ public class IAnimalTest {
 	
 	@Test
 	public void testGetXP(){
-		IAnimal Ianimal = getIAnimalInstance();
-		Mockito.when(animal.getXP()).thenReturn(2);
-		assertEquals(animal.getXP(), 2);
+		IAnimal iAnimal = getIAnimalInstance();
+		Mockito.when(iAnimal.getXP()).thenReturn(2);
+		assertEquals(iAnimal.getXP(), 2);
 	}
 	
 	@Test
 	public void testIsSecret(){
-		IAnimal Ianimal = getIAnimalInstance();
-		Mockito.when(animal.isSecret()).thenReturn(true);
-		assertEquals(animal.isSecret(), true);
+		IAnimal iAnimal = getIAnimalInstance();
+		Mockito.when(iAnimal.isSecret()).thenReturn(true);
+		assertEquals(iAnimal.isSecret(), true);
 	}
 	
 	@Test
 	public void testIsEndangered(){
-		IAnimal Ianimal = getIAnimalInstance();
-		Mockito.when(animal.isEndangered()).thenReturn(false);
-		assertEquals(animal.isEndangered(), false);
+		IAnimal iAnimal = getIAnimalInstance();
+		Mockito.when(iAnimal.isEndangered()).thenReturn(false);
+		assertEquals(iAnimal.isEndangered(), false);
 	}
 	
 	@Test
 	public void testIsBoss(){
-		IAnimal Ianimal = getIAnimalInstance();
-		Mockito.when(animal.isBoss()).thenReturn(true);
-		assertEquals(animal.isBoss(), true);
+		IAnimal iAnimal = getIAnimalInstance();
+		Mockito.when(iAnimal.isBoss()).thenReturn(true);
+		assertEquals(iAnimal.isBoss(), true);
 	}
 	
 

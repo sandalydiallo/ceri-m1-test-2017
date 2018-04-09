@@ -18,10 +18,7 @@ import fr.univavignon.rodeo.api.*;
 
 
 public class ISpecieTest {
-	
-	
-	
-	@Test
+
 	public static ISpecie getISpecieInstance() {
 		//I should create a mock for IAnimal 
 		return Mockito.mock(ISpecie.class);
