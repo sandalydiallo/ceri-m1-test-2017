@@ -34,8 +34,8 @@ public class IAnimalTest {
 	@Test
 	public void testGetXP(){
 		getIAnimalTestInstance();
-		Mockito.when(animal.getXP()).thenReturn(1);
-		assertEquals(animal.getXP(), 1);
+		Mockito.when(animal.getXP()).thenReturn(2);
+		assertEquals(animal.getXP(), 2);
 	}
 	
 	@Test
