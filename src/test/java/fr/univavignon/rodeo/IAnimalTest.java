@@ -23,9 +23,9 @@ public class IAnimalTest {
 	 * be used in every method to create an IAnimal instance 
 	 */
 	@Test
-	public void getIAnimalTestInstance() {
+	public static IAnimal getIAnimalInstance() {
 		//I should create a mock for IAnimal 
-		animal = Mockito.mock(IAnimal.class);
+		return Mockito.mock(IAnimal.class);
 		
 	}
 
@@ -33,28 +33,28 @@ public class IAnimalTest {
 	
 	@Test
 	public void testGetXP(){
-		getIAnimalTestInstance();
+		IAnimal Ianimal = getIAnimalInstance();
 		Mockito.when(animal.getXP()).thenReturn(2);
 		assertEquals(animal.getXP(), 2);
 	}
 	
 	@Test
 	public void testIsSecret(){
-		getIAnimalTestInstance();
+		IAnimal Ianimal = getIAnimalInstance();
 		Mockito.when(animal.isSecret()).thenReturn(true);
 		assertEquals(animal.isSecret(), true);
 	}
 	
 	@Test
 	public void testIsEndangered(){
-		getIAnimalTestInstance();
+		IAnimal Ianimal = getIAnimalInstance();
 		Mockito.when(animal.isEndangered()).thenReturn(false);
 		assertEquals(animal.isEndangered(), false);
 	}
 	
 	@Test
 	public void testIsBoss(){
-		getIAnimalTestInstance();
+		IAnimal Ianimal = getIAnimalInstance();
 		Mockito.when(animal.isBoss()).thenReturn(true);
 		assertEquals(animal.isBoss(), true);
 	}

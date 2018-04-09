@@ -33,7 +33,7 @@ public class IEnvironmentProviderTest {
 		list.add("Environnment2");
 		
 		Mockito.when(IEnvProvider.getAvailableEnvironments()).thenReturn(list);
-		assertEquals(IEnvProvider.getAvailableEnvironments(), null);
+		assertEquals(IEnvProvider.getAvailableEnvironments(), list);
 		
 	}
 	
