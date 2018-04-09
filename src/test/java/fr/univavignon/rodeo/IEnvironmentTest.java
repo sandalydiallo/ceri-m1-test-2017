@@ -9,7 +9,7 @@ import org.junit.* ;
 
 
 
-public class IEnvironnementProviderTest {
+public class IEnvironmentTest {
 	
 	@Test 
 	public void test() {
