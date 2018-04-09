@@ -13,7 +13,7 @@ public class IEnvironmentProviderTest {
 	
 	IEnvironmentProvider IEnvProvider ; 
 	@Test
-	public void getIEnvironmentProviderInstance() {
+	public void getIEnvironmentInstance() {
 		//I should create a mock for IAnimal 
 		IEnvProvider = Mockito.mock(IEnvironmentProvider.class);
 		
