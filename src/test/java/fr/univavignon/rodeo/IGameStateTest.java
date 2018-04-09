@@ -35,12 +35,19 @@ public class IGameStateTest {
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
-	public void testCatchAnimal() {
+	public void testCatchAnimalIllegalArgument() {
 		
 		IGameState IGameState = getIGameStateInstance();
 		Mockito.doThrow(new IllegalArgumentException("The argument is null"))
         .when(IGameState).catchAnimal(null);
 		IGameState.catchAnimal(null);
+		
+	}
+	
+	@Test(expected = IllegalStateException.class)
+	public void testCatchAnimalIllegalState() {
+		
+		IGameState IGameState = getIGameStateInstance();
 		
 		IAnimal animal = IAnimalTest.getIAnimalInstance();
 		Mockito.doThrow(new IllegalStateException("animal can not be found in current areas"))
@@ -53,7 +60,7 @@ public class IGameStateTest {
 		
 		IGameState IGameState = getIGameStateInstance();
 		Mockito.doThrow(new IllegalArgumentException("The argument is null"))
-        .when(IGameState).catchAnimal(null);
+        .when(IGameState).getSpecieLevel(null);
 		IGameState.getSpecieLevel(null);
 		
 	}
