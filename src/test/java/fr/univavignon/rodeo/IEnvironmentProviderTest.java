@@ -20,9 +20,7 @@ public class IEnvironmentProviderTest {
 	}
 	@Test 
 	public void testGetEnvironment() {
-		getIEnvironmentInstance();
-		Mockito.when(IEnvProvider.getEnvironment("")).thenReturn(null);
-		assertEquals(IEnvProvider.getEnvironment(""), null);
+	
 	}
 
 }
