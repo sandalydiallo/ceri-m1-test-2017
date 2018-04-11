@@ -1,5 +1,7 @@
 # BINÔME: DIALLO & IDHEDDOU
 
+[![CircleCI](https://circleci.com/gh/sandalydiallo/ceri-m1-test-2017.svg?style=svg)](https://circleci.com/gh/sandalydiallo/ceri-m1-test-2017)
+
 # ceri-m2-test
 
 ## Resources
