@@ -1,5 +1,7 @@
 # BINÔME: DIALLO & IDHEDDOU
 
+[![CircleCI](https://circleci.com/gh/sandalydiallo/ceri-m1-test-2017.svg?style=svg)](https://circleci.com/gh/sandalydiallo/ceri-m1-test-2017)
+
 [![codecov](https://codecov.io/gh/sandalydiallo/ceri-m1-test-2017/branch/master/graph/badge.svg)](https://codecov.io/gh/sandalydiallo/ceri-m1-test-2017)
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c4aeae0001564d438d66e90cc8bc0213)](https://www.codacy.com/app/sandalydiallo/ceri-m1-test-2017?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sandalydiallo/ceri-m1-test-2017&amp;utm_campaign=Badge_Grade)
